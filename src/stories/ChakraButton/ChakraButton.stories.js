@@ -39,7 +39,10 @@ export const Danger = () => (
 );
 
 export const Log = () => (
-  <Button variantColor="purple" onClick={() => console.log("Clicked")}>
+  <Button
+    variantColor="purple"
+    onClick={() => console.log("Clicked", process.env.STORYBOOK_THEME)}
+  >
     Log
   </Button>
 );
