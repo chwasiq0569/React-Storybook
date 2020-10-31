@@ -11,16 +11,16 @@ function App() {
   const [unmount, setUnmount] = useState(false);
 
   return (
-    <Provider store={store}>
-      <div className="App">
-        {/* {
+    // <Provider store={store}>
+    <div className="App">
+      {/* {
         !unmount ? <ClassComps setUnmount={setUnmount} /> : "Unmounted"
       }
       <button onClick={() => setUnmount(!unmount)}>{ unmount ? "Show" : "Hide" }</button> */}
-        {/* <Header /> */}
-        {/* <CakeContainer /> */}
-      </div>
-    </Provider>
+      {/* <Header /> */}
+      {/* <CakeContainer /> */}
+    </div>
+    // </Provider>
   );
 }
 
