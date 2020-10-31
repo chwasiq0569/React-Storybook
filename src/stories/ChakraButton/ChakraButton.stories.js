@@ -1,6 +1,7 @@
 import React from "react";
 import { Button } from "@chakra-ui/core";
 import { action, actions } from "@storybook/addon-actions";
+// import { Knobs } from './ChakraButton.stories';
 
 export default {
   title: "Chakra/Button",
@@ -44,3 +45,9 @@ export const Log = () => (
     Log
   </Button>
 );
+
+// export const Knobs = () => (
+//   <Button variantColor="purple" diabled={boolean("Disabled", false)}>
+//     {text("Label", "button Label")}
+//   </Button>
+// );
