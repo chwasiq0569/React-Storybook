@@ -5,6 +5,7 @@ import ClassComps from "./Components/ClassComps";
 import Header from "./Components/StyledComponents/Header";
 import Counter from "./PracticingHooks/Counter";
 import HookTimer from "./PracticingHooks/HookTimer/HookTimer";
+import UserForm from "./PracticingHooks/UserForm";
 // import { Provider } from 'react-redux';
 // import { store } from "./Redux/store";
 // import CakeContainer from './Components/CakeContainer';
@@ -15,7 +16,8 @@ function App() {
   return (
     // <Provider store={store}>
     <div className="App">
-      <Counter />
+      {/* <Counter /> */}
+      <UserForm />
       {/* <HookTimer /> */}
       {/* {
         !unmount ? <ClassComps setUnmount={setUnmount} /> : "Unmounted"
