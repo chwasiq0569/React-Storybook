@@ -15,8 +15,8 @@ function App() {
   return (
     // <Provider store={store}>
     <div className="App">
-      {/* <Counter /> */}
-      <HookTimer />
+      <Counter />
+      {/* <HookTimer /> */}
       {/* {
         !unmount ? <ClassComps setUnmount={setUnmount} /> : "Unmounted"
       }

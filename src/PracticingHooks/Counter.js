@@ -1,7 +1,10 @@
 import React, { useEffect, useMemo, useState } from "react";
+import useDocumentHook from "./CustomHook/useDocumentHook";
 const Counter = () => {
   const [conterOne, setconterOne] = useState(0);
   const [conterTwo, setconterTwo] = useState(0);
+
+  useDocumentHook(conterOne);
 
   useEffect(() => {
     console.log("Updated");
