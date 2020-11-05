@@ -11,6 +11,7 @@ import UserForm from "./PracticingHooks/UserForm";
 // import CakeContainer from './Components/CakeContainer';
 import UseState from "./ReactRendrer/UseState";
 import UseReducer from "./ReactRendrer/UseReducer";
+import ObjectUseState from "./ReactRendrer/ObjectUseState";
 
 function App() {
   return (
@@ -19,7 +20,8 @@ function App() {
       {/* <Counter /> */}
       {/* <UserForm /> */}
       {/* <UseState /> */}
-      <UseReducer />
+      {/* <UseReducer /> */}
+      <ObjectUseState />
       {/* <HookTimer /> */}
       {/* {
         !unmount ? <ClassComps setUnmount={setUnmount} /> : "Unmounted"
