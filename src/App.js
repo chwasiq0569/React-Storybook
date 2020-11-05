@@ -9,15 +9,17 @@ import UserForm from "./PracticingHooks/UserForm";
 // import { Provider } from 'react-redux';
 // import { store } from "./Redux/store";
 // import CakeContainer from './Components/CakeContainer';
+import UseState from "./ReactRendrer/UseState";
+import UseReducer from "./ReactRendrer/UseReducer";
 
 function App() {
-  const [unmount, setUnmount] = useState(false);
-
   return (
     // <Provider store={store}>
     <div className="App">
       {/* <Counter /> */}
-      <UserForm />
+      {/* <UserForm /> */}
+      {/* <UseState /> */}
+      <UseReducer />
       {/* <HookTimer /> */}
       {/* {
         !unmount ? <ClassComps setUnmount={setUnmount} /> : "Unmounted"
