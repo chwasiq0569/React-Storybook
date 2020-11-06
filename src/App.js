@@ -12,6 +12,8 @@ import UserForm from "./PracticingHooks/UserForm";
 import UseState from "./ReactRendrer/UseState";
 import UseReducer from "./ReactRendrer/UseReducer";
 import ObjectUseState from "./ReactRendrer/ObjectUseState";
+import ParentOne from "./ReactRendrer/Optimization/ParentOne";
+import ChildOne from "./ReactRendrer/Optimization/ChildOne";
 
 function App() {
   return (
@@ -21,7 +23,10 @@ function App() {
       {/* <UserForm /> */}
       {/* <UseState /> */}
       {/* <UseReducer /> */}
-      <ObjectUseState />
+      {/* <ObjectUseState /> */}
+      <ParentOne>
+        <ChildOne />
+      </ParentOne>
       {/* <HookTimer /> */}
       {/* {
         !unmount ? <ClassComps setUnmount={setUnmount} /> : "Unmounted"
@@ -30,6 +35,7 @@ function App() {
       {/* <Header /> */}
       {/* <CakeContainer /> */}
     </div>
+    //{" "}
     // </Provider>
   );
 }
