@@ -18,12 +18,12 @@ import ParentComponent from "./Prep/ParentComponent";
 import HeroComp from "./ErrorBoundary/HeroComp";
 import ErrorBoundary from "./ErrorBoundary/ErrorBoundary";
 import Comp1 from "./ContextApi/Comp1";
-export const MyContext = React.createContext();
+import ContectProvider from "./ContextApi/ContectProvider";
 
 function App() {
   return (
     // <Provider store={store}>
-    <MyContext.Provider value={{ fname: "Wasiq", lname: "Abdullah" }}>
+    <ContectProvider>
       <div className="App">
         {/* <Counter /> */}
         {/* <UserForm /> */}
@@ -52,7 +52,7 @@ function App() {
         {/* <Header /> */}
         {/* <CakeContainer /> */}
       </div>
-    </MyContext.Provider>
+    </ContectProvider>
     //{" "}
     // </Provider>
   );
