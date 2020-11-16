@@ -17,42 +17,44 @@ import ChildOne from "./ReactRendrer/Optimization/ChildOne";
 import ParentComponent from "./Prep/ParentComponent";
 import HeroComp from "./ErrorBoundary/HeroComp";
 import ErrorBoundary from "./ErrorBoundary/ErrorBoundary";
+import Comp1 from "./ContextApi/Comp1";
+export const MyContext = React.createContext();
 
 function App() {
   return (
     // <Provider store={store}>
-    <div className="App">
-      {/* <Counter /> */}
-      {/* <UserForm /> */}
-      {/* <UseState /> */}
-      {/* <UseReducer /> */}
-      {/* <ObjectUseState /> */}
-      {/* <ParentOne>
+    <MyContext.Provider value={{ fname: "Wasiq", lname: "Abdullah" }}>
+      <div className="App">
+        {/* <Counter /> */}
+        {/* <UserForm /> */}
+        {/* <UseState /> */}
+        {/* <UseReducer /> */}
+        {/* <ObjectUseState /> */}
+        {/* <ParentOne>
         <ChildOne />
       </ParentOne> */}
-      {/* <ParentComponent /> */}
-      <ErrorBoundary>
-        {" "}
-        {/*this will not catch errors in onClick handlers*/}
-        <HeroComp heroName="Wasiq" />
+        {/* <ParentComponent /> */}
+        {/* <ErrorBoundary> */}
+        <Comp1 /> {/*this will not catch errors in onClick handlers*/}
+        {/* <HeroComp heroName="Wasiq" />
       </ErrorBoundary>
       <ErrorBoundary>
         <HeroComp heroName="Wasiq Abdullah" />
       </ErrorBoundary>
       <ErrorBoundary>
         <HeroComp heroName="Joker" />
-      </ErrorBoundary>
-      {/* <HookTimer /> */}
-      {/* {
+      </ErrorBoundary> */}
+        {/* <HookTimer /> */}
+        {/* {
         !unmount ? <ClassComps setUnmount={setUnmount} /> : "Unmounted"
       }
       <button onClick={() => setUnmount(!unmount)}>{ unmount ? "Show" : "Hide" }</button> */}
-      {/* <Header /> */}
-      {/* <CakeContainer /> */}
-    </div>
+        {/* <Header /> */}
+        {/* <CakeContainer /> */}
+      </div>
+    </MyContext.Provider>
     //{" "}
     // </Provider>
   );
 }
-
 export default App;
