@@ -10,4 +10,4 @@ const HoverCounter = (props) => {
   );
 };
 
-export default HighOrderComponent(HoverCounter);
+export default HighOrderComponent(HoverCounter, 10);

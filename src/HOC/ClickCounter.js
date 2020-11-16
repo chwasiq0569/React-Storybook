@@ -11,4 +11,4 @@ const ClickCounter = (props) => {
   );
 };
 
-export default HighOrderComponent(ClickCounter);
+export default HighOrderComponent(ClickCounter, 5);
