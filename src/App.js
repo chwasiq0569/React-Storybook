@@ -14,6 +14,9 @@ import UseReducer from "./ReactRendrer/UseReducer";
 import ObjectUseState from "./ReactRendrer/ObjectUseState";
 import ParentOne from "./ReactRendrer/Optimization/ParentOne";
 import ChildOne from "./ReactRendrer/Optimization/ChildOne";
+import ParentComponent from "./Prep/ParentComponent";
+import HeroComp from "./ErrorBoundary/HeroComp";
+import ErrorBoundary from "./ErrorBoundary/ErrorBoundary";
 
 function App() {
   return (
@@ -24,9 +27,21 @@ function App() {
       {/* <UseState /> */}
       {/* <UseReducer /> */}
       {/* <ObjectUseState /> */}
-      <ParentOne>
+      {/* <ParentOne>
         <ChildOne />
-      </ParentOne>
+      </ParentOne> */}
+      {/* <ParentComponent /> */}
+      <ErrorBoundary>
+        {" "}
+        {/*this will not catch errors in onClick handlers*/}
+        <HeroComp heroName="Wasiq" />
+      </ErrorBoundary>
+      <ErrorBoundary>
+        <HeroComp heroName="Wasiq Abdullah" />
+      </ErrorBoundary>
+      <ErrorBoundary>
+        <HeroComp heroName="Joker" />
+      </ErrorBoundary>
       {/* <HookTimer /> */}
       {/* {
         !unmount ? <ClassComps setUnmount={setUnmount} /> : "Unmounted"
