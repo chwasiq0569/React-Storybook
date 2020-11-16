@@ -19,24 +19,30 @@ import HeroComp from "./ErrorBoundary/HeroComp";
 import ErrorBoundary from "./ErrorBoundary/ErrorBoundary";
 import Comp1 from "./ContextApi/Comp1";
 import ContectProvider from "./ContextApi/ContectProvider";
+import ClickCounter from "./HOC/ClickCounter";
+import HoverCounter from "./HOC/HoverCounter";
+import HighOrderComponent from "./HOC/HighOrderComponent";
 
 function App() {
   return (
-    // <Provider store={store}>
-    <ContectProvider>
-      <div className="App">
-        {/* <Counter /> */}
-        {/* <UserForm /> */}
-        {/* <UseState /> */}
-        {/* <UseReducer /> */}
-        {/* <ObjectUseState /> */}
-        {/* <ParentOne>
+    // // <Provider store={store}>
+    // <ContectProvider>
+    //   <div className="App">
+    <>
+      <ClickCounter name="Wasiq A" />
+      <HoverCounter name="Wasiq B" />
+      {/* <Counter /> */}
+      {/* <UserForm /> */}
+      {/* <UseState /> */}
+      {/* <UseReducer /> */}
+      {/* <ObjectUseState /> */}
+      {/* <ParentOne>
         <ChildOne />
       </ParentOne> */}
-        {/* <ParentComponent /> */}
-        {/* <ErrorBoundary> */}
-        <Comp1 /> {/*this will not catch errors in onClick handlers*/}
-        {/* <HeroComp heroName="Wasiq" />
+      {/* <ParentComponent /> */}
+      {/* <ErrorBoundary> */}
+      {/* <Comp1 /> this will not catch errors in onClick handlers */}
+      {/* <HeroComp heroName="Wasiq" />
       </ErrorBoundary>
       <ErrorBoundary>
         <HeroComp heroName="Wasiq Abdullah" />
@@ -44,17 +50,18 @@ function App() {
       <ErrorBoundary>
         <HeroComp heroName="Joker" />
       </ErrorBoundary> */}
-        {/* <HookTimer /> */}
-        {/* {
+      {/* <HookTimer /> */}
+      {/* {
         !unmount ? <ClassComps setUnmount={setUnmount} /> : "Unmounted"
       }
       <button onClick={() => setUnmount(!unmount)}>{ unmount ? "Show" : "Hide" }</button> */}
-        {/* <Header /> */}
-        {/* <CakeContainer /> */}
-      </div>
+      {/* <Header /> */}
+      {/* <CakeContainer /> */}
+      {/* </div>
     </ContectProvider>
     //{" "}
-    // </Provider>
+    // </Provider> */}
+    </>
   );
 }
 export default App;
