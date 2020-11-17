@@ -22,6 +22,8 @@ import ClickCounter from "./HOC/ClickCounter";
 import HoverCounter from "./HOC/HoverCounter";
 import HighOrderComponent from "./HOC/HighOrderComponent";
 import RenderProps from "./RenderProps/RenderProps";
+import CounterClick from "./RenderProps/CounterClick";
+import CounterHover from "./RenderProps/CounterHover";
 
 function App() {
   return (
@@ -31,7 +33,12 @@ function App() {
     <>
       {/* <ClickCounter name="Wasiq A" />
       <HoverCounter name="Wasiq B" /> */}
-      <RenderProps render={(isLogged) => (isLogged ? "Wasiq" : "Not Wasiq")} />
+      <RenderProps
+        render={(count, increment) => (
+          <CounterClick count={count} increment={increment} />
+        )}
+      />
+
       {/* <Counter /> */}
       {/* <UserForm /> */}
       {/* <UseState /> */}
