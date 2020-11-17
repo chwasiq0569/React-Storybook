@@ -3,7 +3,6 @@ import logo from "./logo.svg";
 import "./App.css";
 import ClassComps from "./Components/ClassComps";
 import Header from "./Components/StyledComponents/Header";
-import Counter from "./PracticingHooks/Counter";
 import HookTimer from "./PracticingHooks/HookTimer/HookTimer";
 import UserForm from "./PracticingHooks/UserForm";
 // import { Provider } from 'react-redux';
@@ -16,12 +15,13 @@ import ParentOne from "./ReactRendrer/Optimization/ParentOne";
 import ChildOne from "./ReactRendrer/Optimization/ChildOne";
 import ParentComponent from "./Prep/ParentComponent";
 import HeroComp from "./ErrorBoundary/HeroComp";
-import ErrorBoundary from "./ErrorBoundary/ErrorBoundary";
+import ErrorBosundary from "./ErrorBoundary/ErrorBoundary";
 import Comp1 from "./ContextApi/Comp1";
 import ContectProvider from "./ContextApi/ContectProvider";
 import ClickCounter from "./HOC/ClickCounter";
 import HoverCounter from "./HOC/HoverCounter";
 import HighOrderComponent from "./HOC/HighOrderComponent";
+import RenderProps from "./RenderProps/RenderProps";
 
 function App() {
   return (
@@ -29,8 +29,9 @@ function App() {
     // <ContectProvider>
     //   <div className="App">
     <>
-      <ClickCounter name="Wasiq A" />
-      <HoverCounter name="Wasiq B" />
+      {/* <ClickCounter name="Wasiq A" />
+      <HoverCounter name="Wasiq B" /> */}
+      <RenderProps render={(isLogged) => (isLogged ? "Wasiq" : "Not Wasiq")} />
       {/* <Counter /> */}
       {/* <UserForm /> */}
       {/* <UseState /> */}
