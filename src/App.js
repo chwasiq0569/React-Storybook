@@ -38,7 +38,11 @@ function App() {
           <CounterClick count={count} increment={increment} />
         )}
       />
-
+      <RenderProps
+        render={(count, increment) => (
+          <CounterHover count={count} increment={increment} />
+        )}
+      />
       {/* <Counter /> */}
       {/* <UserForm /> */}
       {/* <UseState /> */}
