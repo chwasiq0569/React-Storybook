@@ -27,12 +27,7 @@ import CounterHover from "./RenderProps/CounterHover";
 
 function App() {
   return (
-    // // <Provider store={store}>
-    // <ContectProvider>
-    //   <div className="App">
     <>
-      {/* <ClickCounter name="Wasiq A" />
-      <HoverCounter name="Wasiq B" /> */}
       <RenderProps
         render={(count, increment) => (
           <CounterClick count={count} increment={increment} />
@@ -43,36 +38,6 @@ function App() {
           <CounterHover count={count} increment={increment} />
         )}
       />
-      {/* <Counter /> */}
-      {/* <UserForm /> */}
-      {/* <UseState /> */}
-      {/* <UseReducer /> */}
-      {/* <ObjectUseState /> */}
-      {/* <ParentOne>
-        <ChildOne />
-      </ParentOne> */}
-      {/* <ParentComponent /> */}
-      {/* <ErrorBoundary> */}
-      {/* <Comp1 /> this will not catch errors in onClick handlers */}
-      {/* <HeroComp heroName="Wasiq" />
-      </ErrorBoundary>
-      <ErrorBoundary>
-        <HeroComp heroName="Wasiq Abdullah" />
-      </ErrorBoundary>
-      <ErrorBoundary>
-        <HeroComp heroName="Joker" />
-      </ErrorBoundary> */}
-      {/* <HookTimer /> */}
-      {/* {
-        !unmount ? <ClassComps setUnmount={setUnmount} /> : "Unmounted"
-      }
-      <button onClick={() => setUnmount(!unmount)}>{ unmount ? "Show" : "Hide" }</button> */}
-      {/* <Header /> */}
-      {/* <CakeContainer /> */}
-      {/* </div>
-    </ContectProvider>
-    //{" "}
-    // </Provider> */}
     </>
   );
 }
