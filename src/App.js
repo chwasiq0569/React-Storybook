@@ -24,11 +24,12 @@ import HighOrderComponent from "./HOC/HighOrderComponent";
 import RenderProps from "./RenderProps/RenderProps";
 import CounterClick from "./RenderProps/CounterClick";
 import CounterHover from "./RenderProps/CounterHover";
+import ReactLazyLoad from "./ReactLazyLoad/ReactLazyLoad";
 
 function App() {
   return (
     <>
-      <RenderProps
+      {/* <RenderProps
         render={(count, increment) => (
           <CounterClick count={count} increment={increment} />
         )}
@@ -37,7 +38,8 @@ function App() {
         render={(count, increment) => (
           <CounterHover count={count} increment={increment} />
         )}
-      />
+      /> */}
+      <ReactLazyLoad />
     </>
   );
 }
