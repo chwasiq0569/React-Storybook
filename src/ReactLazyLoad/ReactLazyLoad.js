@@ -1,15 +1,15 @@
 import React, { lazy, Suspense } from "react";
-const LazyHome = lazy(() => import("./LazyHome")); //importing to lazy load
-const LazyAboutPage = lazy(() => import("./LazyAbout"));
+const LazyHome = lazy(() => import("./LazyHome")); //importing to lazy load & will import asyncronasly
+const LazyAboutPage = lazy(() => import("./LazyAbout")); // will import asyncronasly
 const ReactLazyLoad = () => {
   return (
     <div>
       <h1>React Lazy Loading Code Splitting</h1>
       <Suspense fallback={<div>LazyAboutPage is Loading</div>}>
-        <LazyAboutPage />
+        <LazyAboutPage /> {/* this will load when needed */}
       </Suspense>
       <Suspense fallback={<div>Home is Loading</div>}>
-        <LazyHome />
+        <LazyHome /> {/* this will load when needed */}
       </Suspense>
     </div>
   );

@@ -25,6 +25,8 @@ import RenderProps from "./RenderProps/RenderProps";
 import CounterClick from "./RenderProps/CounterClick";
 import CounterHover from "./RenderProps/CounterHover";
 import ReactLazyLoad from "./ReactLazyLoad/ReactLazyLoad";
+import ErrorBoundary from "./ErrorBoundary/ErrorBoundary";
+import LearnPropTypes from "./LearningPropTypes/LearnPropTypes";
 
 function App() {
   return (
@@ -39,7 +41,15 @@ function App() {
           <CounterHover count={count} increment={increment} />
         )}
       /> */}
-      <ReactLazyLoad />
+      <LearnPropTypes
+        name={"Wasiq"}
+        age={21}
+        objectsProps={{ id: "numl-s19-10218" }}
+        funcProps={() => "Hello"}
+      />
+      {/* <ErrorBoundary>
+        <ReactLazyLoad />
+      </ErrorBoundary> */}
     </>
   );
 }
