@@ -27,10 +27,12 @@ import CounterHover from "./RenderProps/CounterHover";
 import ReactLazyLoad from "./ReactLazyLoad/ReactLazyLoad";
 import ErrorBoundary from "./ErrorBoundary/ErrorBoundary";
 import LearnPropTypes from "./LearningPropTypes/LearnPropTypes";
+import KeysAsIndex from "./KeysAsIndex/KeysAsIndex";
 
 function App() {
   return (
     <>
+      <KeysAsIndex />
       {/* <RenderProps
         render={(count, increment) => (
           <CounterClick count={count} increment={increment} />
@@ -41,12 +43,13 @@ function App() {
           <CounterHover count={count} increment={increment} />
         )}
       /> */}
-      <LearnPropTypes
+      {/* <LearnPropTypes
         name={"Wasiq"}
         age={21}
         objectsProps={{ id: "numl-s19-10218" }}
         funcProps={() => "Hello"}
-      />
+        arrayProps={[1, 2, 3]}
+      /> */}
       {/* <ErrorBoundary>
         <ReactLazyLoad />
       </ErrorBoundary> */}

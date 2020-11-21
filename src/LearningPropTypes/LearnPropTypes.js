@@ -23,6 +23,8 @@ LearnPropTypes.propTypes = {
     sem: PropTypes.string,
     rollNo: PropTypes.number,
   }).isRequired,
+  funcProps: PropTypes.func,
+  arrayProps: PropTypes.arrayOf(PropTypes.number),
 };
 
 LearnPropTypes.defaultProps = {
