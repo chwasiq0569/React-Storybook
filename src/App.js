@@ -13,7 +13,6 @@ import UseReducer from "./ReactRendrer/UseReducer";
 import ObjectUseState from "./ReactRendrer/ObjectUseState";
 import ParentOne from "./ReactRendrer/Optimization/ParentOne";
 import ChildOne from "./ReactRendrer/Optimization/ChildOne";
-import ParentComponent from "./Prep/ParentComponent";
 import HeroComp from "./ErrorBoundary/HeroComp";
 import ErrorBosundary from "./ErrorBoundary/ErrorBoundary";
 import Comp1 from "./ContextApi/Comp1";
@@ -28,11 +27,13 @@ import ReactLazyLoad from "./ReactLazyLoad/ReactLazyLoad";
 import ErrorBoundary from "./ErrorBoundary/ErrorBoundary";
 import LearnPropTypes from "./LearningPropTypes/LearnPropTypes";
 import KeysAsIndex from "./KeysAsIndex/KeysAsIndex";
+import ParentComponentT from "./PracticingLifecycleMethods/ParentComponentT";
 
 function App() {
   return (
     <>
-      <KeysAsIndex />
+      {/* <KeysAsIndex /> */}
+      <ParentComponentT />
       {/* <RenderProps
         render={(count, increment) => (
           <CounterClick count={count} increment={increment} />
