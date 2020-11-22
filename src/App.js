@@ -28,12 +28,16 @@ import ErrorBoundary from "./ErrorBoundary/ErrorBoundary";
 import LearnPropTypes from "./LearningPropTypes/LearnPropTypes";
 import KeysAsIndex from "./KeysAsIndex/KeysAsIndex";
 import ParentComponentT from "./PracticingLifecycleMethods/ParentComponentT";
+import ApiRequests from "./ApiRequests/ApiRequests";
+import ReactParentComp from "./ReactOptimization/ReactParentComp";
 
 function App() {
   return (
     <>
       {/* <KeysAsIndex /> */}
-      <ParentComponentT />
+      {/* <ParentComponentT /> */}
+      {/* <ApiRequests /> */}
+      <ReactParentComp />
       {/* <RenderProps
         render={(count, increment) => (
           <CounterClick count={count} increment={increment} />
