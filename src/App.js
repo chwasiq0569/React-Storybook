@@ -33,13 +33,15 @@ import ReactParentComp from "./ReactOptimization/ReactParentComp";
 import NameComp from "./ApiRequests/FetchDataWithSuspence/NameComp";
 import AddressComp from "./ApiRequests/FetchDataWithSuspence/AddressComp";
 import ReactChartJS from "./ReactChartJS/ReactChartJS";
+import StarRating from "./StarRating/StarRating";
 
 function App() {
   return (
     <>
       {/* <KeysAsIndex /> */}
       {/* <ParentComponentT currentValue={75} /> */}
-      <ReactChartJS />
+      {/* <ReactChartJS /> */}
+      <StarRating />
       {/* <ApiRequests /> */}
       {/* <ReactParentComp /> */}
       {/* <NameComp /> */}

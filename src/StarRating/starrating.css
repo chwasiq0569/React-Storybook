@@ -1,0 +1,28 @@
+.wrapper {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 5px solid black;
+}
+.starsContainer {
+  width: 50%;
+  height: 25rem;
+  border: 2px solid red;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.star {
+  width: 12%;
+  height: 12%;
+  border: 3px solid blue;
+  cursor: pointer;
+}
+.starFilled {
+  background-color: blue;
+}
+/* .star:hover {
+  background-color: blue;
+} */
