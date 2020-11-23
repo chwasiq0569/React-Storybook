@@ -32,12 +32,14 @@ import ApiRequests from "./ApiRequests/ApiRequests";
 import ReactParentComp from "./ReactOptimization/ReactParentComp";
 import NameComp from "./ApiRequests/FetchDataWithSuspence/NameComp";
 import AddressComp from "./ApiRequests/FetchDataWithSuspence/AddressComp";
+import ReactChartJS from "./ReactChartJS/ReactChartJS";
 
 function App() {
   return (
     <>
       {/* <KeysAsIndex /> */}
-      <ParentComponentT currentValue={75} />
+      {/* <ParentComponentT currentValue={75} /> */}
+      <ReactChartJS />
       {/* <ApiRequests /> */}
       {/* <ReactParentComp /> */}
       {/* <NameComp /> */}
