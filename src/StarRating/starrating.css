@@ -26,3 +26,19 @@
 /* .star:hover {
   background-color: blue;
 } */
+/* {arr.map((a, i) =>
+    !selected ? (
+      <div
+        className={i + 1 <= hoverState ? "star starFilled" : "star"}
+        key={uuidv4()}
+        onMouseOver={() => setHoverState(i + 1)}
+        onMouseOut={() => setHoverState(0)}
+        onClick={() => rated(i)}
+      ></div>
+    ) : (
+      <div
+        className={i + 1 <= selected ? "star starFilled" : "star"}
+        key={uuidv4()}
+      ></div>
+    )
+  )} */
