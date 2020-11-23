@@ -13,7 +13,7 @@ const ReactParentComp = () => {
   const memoizedCallback = useCallback((number) => changeState(number), []);
   //useCallback hook do comparison based upon refrential equality
   //whenever parent component updated it create new changeState function
-  //due to which the prevProps passed to childComponent does not equal to newProps and ChildCOmponent again rerenders when parentcomponent rerenders
+  //due to which the prevProps passed to childComponent does not equal to newProps and ChildComponent again rerenders when parentcomponent rerenders
 
   const getmax = () => {
     console.log("I am working");

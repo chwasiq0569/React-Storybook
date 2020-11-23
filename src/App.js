@@ -30,14 +30,18 @@ import KeysAsIndex from "./KeysAsIndex/KeysAsIndex";
 import ParentComponentT from "./PracticingLifecycleMethods/ParentComponentT";
 import ApiRequests from "./ApiRequests/ApiRequests";
 import ReactParentComp from "./ReactOptimization/ReactParentComp";
+import NameComp from "./ApiRequests/FetchDataWithSuspence/NameComp";
+import AddressComp from "./ApiRequests/FetchDataWithSuspence/AddressComp";
 
 function App() {
   return (
     <>
       {/* <KeysAsIndex /> */}
-      {/* <ParentComponentT /> */}
+      <ParentComponentT currentValue={75} />
       {/* <ApiRequests /> */}
-      <ReactParentComp />
+      {/* <ReactParentComp /> */}
+      {/* <NameComp /> */}
+      {/* <AddressComp /> */}
       {/* <RenderProps
         render={(count, increment) => (
           <CounterClick count={count} increment={increment} />
