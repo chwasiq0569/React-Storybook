@@ -26,27 +26,18 @@ const StarRating = () => {
         <div className="starsContainer">
           {arr.map((a, i) =>
             !selected ? (
-              i + 1 <= hoverState ? (
-                <div
-                  className="star starFilled"
-                  key={uuidv4()}
-                  onMouseOver={() => setHoverState(i + 1)}
-                  onMouseOut={() => setHoverState(0)}
-                  onClick={() => rated(i)}
-                ></div>
-              ) : (
-                <div
-                  className="star"
-                  key={uuidv4()}
-                  onMouseOver={() => setHoverState(i + 1)}
-                  onMouseOut={() => setHoverState(0)}
-                  onClick={() => rated(i)}
-                ></div>
-              )
-            ) : i + 1 <= selected ? (
-              <div className="star starFilled" key={uuidv4()}></div>
+              <div
+                className={i + 1 <= hoverState ? "star starFilled" : "star"}
+                key={uuidv4()}
+                onMouseOver={() => setHoverState(i + 1)}
+                onMouseOut={() => setHoverState(0)}
+                onClick={() => (!selected ? rated(i) : null)}
+              ></div>
             ) : (
-              <div className="star " key={uuidv4()}></div>
+              <div
+                className={i + 1 <= selected ? "star starFilled" : "star"}
+                key={uuidv4()}
+              ></div>
             )
           )}
         </div>
@@ -59,10 +50,12 @@ const StarRating = () => {
 export default StarRating;
 
 // Real Code
+
 // {arr.map((a, i) =>
-//     !selected ? (
+//   !selected ? (
+//     i + 1 <= hoverState ? (
 //       <div
-//         className={i + 1 <= hoverState ? "star starFilled" : "star"}
+//         className="star starFilled"
 //         key={uuidv4()}
 //         onMouseOver={() => setHoverState(i + 1)}
 //         onMouseOut={() => setHoverState(0)}
@@ -70,8 +63,16 @@ export default StarRating;
 //       ></div>
 //     ) : (
 //       <div
-//         className={i + 1 <= selected ? "star starFilled" : "star"}
+//         className="star"
 //         key={uuidv4()}
+//         onMouseOver={() => setHoverState(i + 1)}
+//         onMouseOut={() => setHoverState(0)}
+//         onClick={() => rated(i)}
 //       ></div>
 //     )
-//   )}
+//   ) : i + 1 <= selected ? (
+//     <div className="star starFilled" key={uuidv4()}></div>
+//   ) : (
+//     <div className="star " key={uuidv4()}></div>
+//   )
+// )}
