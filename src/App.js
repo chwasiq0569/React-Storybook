@@ -35,6 +35,7 @@ import AddressComp from "./ApiRequests/FetchDataWithSuspence/AddressComp";
 import ReactChartJS from "./ReactChartJS/ReactChartJS";
 import StarRating from "./StarRating/StarRating";
 import SearchableComponent from "./SearchableComponent/SearchableComponent";
+import DeeplyNestedDropdown from "./DeeplyNestedDropdown/DeeplyNestedDropdown";
 
 function App() {
   return (
@@ -43,7 +44,8 @@ function App() {
       {/* <ParentComponentT currentValue={75} /> */}
       {/* <ReactChartJS /> */}
       {/* <StarRating /> */}
-      <SearchableComponent />
+      {/* <SearchableComponent /> */}
+      <DeeplyNestedDropdown />
       {/* <ApiRequests /> */}
       {/* <ReactParentComp /> */}
       {/* <NameComp /> */}

@@ -1,0 +1,24 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.navElem {
+  color: black;
+  list-style-type: square;
+}
+.navElem:hover {
+  color: blue;
+}
+li {
+  cursor: pointer;
+  margin-left: 5rem;
+}
+.levelOneNavContainer {
+  margin-left: 1rem;
+}
+.hide {
+  display: none;
+}
+.levelOneNavElem:hover {
+  color: blue;
+}
