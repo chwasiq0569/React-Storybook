@@ -34,6 +34,7 @@ import NameComp from "./ApiRequests/FetchDataWithSuspence/NameComp";
 import AddressComp from "./ApiRequests/FetchDataWithSuspence/AddressComp";
 import ReactChartJS from "./ReactChartJS/ReactChartJS";
 import StarRating from "./StarRating/StarRating";
+import SearchableComponent from "./SearchableComponent/SearchableComponent";
 
 function App() {
   return (
@@ -41,7 +42,8 @@ function App() {
       {/* <KeysAsIndex /> */}
       {/* <ParentComponentT currentValue={75} /> */}
       {/* <ReactChartJS /> */}
-      <StarRating />
+      {/* <StarRating /> */}
+      <SearchableComponent />
       {/* <ApiRequests /> */}
       {/* <ReactParentComp /> */}
       {/* <NameComp /> */}
