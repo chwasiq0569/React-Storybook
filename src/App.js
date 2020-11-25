@@ -37,11 +37,13 @@ import StarRating from "./StarRating/StarRating";
 import SearchableComponent from "./SearchableComponent/SearchableComponent";
 import DeeplyNestedDropdown from "./DeeplyNestedDropdown/DeeplyNestedDropdown";
 import InfiniteScroll from "./InfiniteScroll/InfiniteScroll";
+import TodoList from "./TodoListChallenge/TodoList";
 
 function App() {
   return (
     <>
-      <KeysAsIndex />
+      {/* <KeysAsIndex /> */}
+      <TodoList />
       {/* <ParentComponentT currentValue={75} /> */}
       {/* <ReactChartJS /> */}
       {/* <StarRating /> */}
