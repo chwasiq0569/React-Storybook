@@ -36,16 +36,18 @@ import ReactChartJS from "./ReactChartJS/ReactChartJS";
 import StarRating from "./StarRating/StarRating";
 import SearchableComponent from "./SearchableComponent/SearchableComponent";
 import DeeplyNestedDropdown from "./DeeplyNestedDropdown/DeeplyNestedDropdown";
+import InfiniteScroll from "./InfiniteScroll/InfiniteScroll";
 
 function App() {
   return (
     <>
-      {/* <KeysAsIndex /> */}
+      <KeysAsIndex />
       {/* <ParentComponentT currentValue={75} /> */}
       {/* <ReactChartJS /> */}
       {/* <StarRating /> */}
       {/* <SearchableComponent /> */}
-      <DeeplyNestedDropdown />
+      {/* <DeeplyNestedDropdown /> */}
+      {/* <InfiniteScroll /> */}
       {/* <ApiRequests /> */}
       {/* <ReactParentComp /> */}
       {/* <NameComp /> */}
