@@ -6,7 +6,7 @@ Array [
     data-test="incrementBtn"
     onClick={[Function]}
   >
-    Increment
+    +++
   </button>,
   <p
     className="countValue"
@@ -18,7 +18,7 @@ Array [
     data-test="decrementBtn"
     onClick={[Function]}
   >
-    Decrement
+    ---
   </button>,
 ]
 `;

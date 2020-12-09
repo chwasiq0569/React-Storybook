@@ -7,6 +7,7 @@ describe("Counter Component is Rendering Seccessfully", () => {
   it("Matched the snapshot", () => {
     //takes snapshot of component if any changes occurs in UI this will yell
     const tree = renderer.create(<TestCounter />).toJSON();
+    //if any positive change happens then press u to update snapshot
     expect(tree).toMatchSnapshot();
   });
   it("starts with a Counter of 0", () => {
@@ -14,10 +15,10 @@ describe("Counter Component is Rendering Seccessfully", () => {
     const countState = wrapper.state().count;
     expect(countState).toEqual(0);
   });
-  it("Increment Btn should contain Increment Text", () => {
+  it("Increment Btn should contain +++ Text", () => {
     const wrapper = shallow(<TestCounter />);
     const incrementBtn = wrapper.find(`[data-test='incrementBtn']`);
-    expect(incrementBtn.text()).toEqual("Increment");
+    expect(incrementBtn.text()).toEqual("+++");
   });
   it("p tag should contain count: 0 initially", () => {
     const wrapper = shallow(<TestCounter />);

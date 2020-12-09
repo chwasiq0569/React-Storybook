@@ -18,14 +18,14 @@ class TestCount extends Component {
           data-test="incrementBtn"
           onClick={() => this.setState({ count: this.state.count + 2 })}
         >
-          Increment
+          +++
         </button>
         <p className="countValue">count: {this.state.count}</p>
         <button
           data-test="decrementBtn"
           onClick={() => this.setState({ count: this.state.count - 2 })}
         >
-          Decrement
+          ---
         </button>
       </>
     );
