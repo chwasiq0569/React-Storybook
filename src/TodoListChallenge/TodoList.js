@@ -16,7 +16,6 @@ const TodoList = () => {
   const onClose = () => {
     setOpen(false);
   };
-  console.log("Opened", open);
 
   return (
     <div>

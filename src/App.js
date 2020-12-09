@@ -5,9 +5,6 @@ import ClassComps from "./Components/ClassComps";
 import Header from "./Components/StyledComponents/Header";
 import HookTimer from "./PracticingHooks/HookTimer/HookTimer";
 import UserForm from "./PracticingHooks/UserForm";
-// import { Provider } from 'react-redux';
-// import { store } from "./Redux/store";
-// import CakeContainer from './Components/CakeContainer';
 import UseState from "./ReactRendrer/UseState";
 import UseReducer from "./ReactRendrer/UseReducer";
 import ObjectUseState from "./ReactRendrer/ObjectUseState";
@@ -17,12 +14,8 @@ import HeroComp from "./ErrorBoundary/HeroComp";
 import ErrorBosundary from "./ErrorBoundary/ErrorBoundary";
 import Comp1 from "./ContextApi/Comp1";
 import ContectProvider from "./ContextApi/ContectProvider";
-import ClickCounter from "./HOC/ClickCounter";
-import HoverCounter from "./HOC/HoverCounter";
 import HighOrderComponent from "./HOC/HighOrderComponent";
 import RenderProps from "./RenderProps/RenderProps";
-import CounterClick from "./RenderProps/CounterClick";
-import CounterHover from "./RenderProps/CounterHover";
 import ReactLazyLoad from "./ReactLazyLoad/ReactLazyLoad";
 import ErrorBoundary from "./ErrorBoundary/ErrorBoundary";
 import LearnPropTypes from "./LearningPropTypes/LearnPropTypes";
@@ -38,12 +31,20 @@ import SearchableComponent from "./SearchableComponent/SearchableComponent";
 import DeeplyNestedDropdown from "./DeeplyNestedDropdown/DeeplyNestedDropdown";
 import InfiniteScroll from "./InfiniteScroll/InfiniteScroll";
 import TodoList from "./TodoListChallenge/TodoList";
+import GetRequest from "./GetPostRequests/GetRequest";
+import PostRequest from "./GetPostRequests/PostRequest";
+// import Main from "./MaterialUI/Main";
+import TestCounter from "./Testing/Counter/TestCounter";
 
-function App() {
+function App(props) {
   return (
     <>
+      <TestCounter />
+      {/* <Main /> */}
       {/* <KeysAsIndex /> */}
-      <TodoList />
+      {/* <TodoList /> */}
+      {/* <GetRequest /> */}
+      {/* <PostRequest /> */}
       {/* <ParentComponentT currentValue={75} /> */}
       {/* <ReactChartJS /> */}
       {/* <StarRating /> */}
@@ -54,6 +55,7 @@ function App() {
       {/* <ReactParentComp /> */}
       {/* <NameComp /> */}
       {/* <AddressComp /> */}
+      {/* <ClickCounter myProp="Hello" /> */}
       {/* <RenderProps
         render={(count, increment) => (
           <CounterClick count={count} increment={increment} />

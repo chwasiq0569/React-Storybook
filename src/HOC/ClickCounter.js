@@ -1,14 +1,14 @@
-import React from "react";
-import { useState } from "react";
-import HighOrderComponent from "./HighOrderComponent";
-const ClickCounter = (props) => {
-  return (
-    <div>
-      <button onClick={props.increment}>
-        Click to Increment {props.name} {props.count}
-      </button>
-    </div>
-  );
-};
+// import React from "react";
+// import { useState } from "react";
+// import HighOrderComponent from "./HighOrderComponent";
+// const ClickCounter = (props) => {
+//   return (
+//     <div>
+//       <button onClick={props.increment}>
+//         Click to Increment {props.name} {props.count}
+//       </button>
+//     </div>
+//   );
+// };
 
-export default HighOrderComponent(ClickCounter, 5);
+// export default HighOrderComponent(<ClickCounter myProp={props.myProp} />, 5);
