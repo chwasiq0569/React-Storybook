@@ -35,11 +35,13 @@ import GetRequest from "./GetPostRequests/GetRequest";
 import PostRequest from "./GetPostRequests/PostRequest";
 // import Main from "./MaterialUI/Main";
 import TestCounter from "./Testing/Counter/TestCounter";
+import CounterList from "./Testing/Counter/CounterList";
 
 function App(props) {
   return (
     <>
       <TestCounter />
+      <CounterList />
       {/* <Main /> */}
       {/* <KeysAsIndex /> */}
       {/* <TodoList /> */}
