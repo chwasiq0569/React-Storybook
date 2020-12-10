@@ -36,12 +36,16 @@ import PostRequest from "./GetPostRequests/PostRequest";
 // import Main from "./MaterialUI/Main";
 import TestCounter from "./Testing/Counter/TestCounter";
 import CounterList from "./Testing/Counter/CounterList";
+import FetchingTestApi from "./Testing/FetchingTestApi/FetchingTestApi";
+import FetchingTestApiHooks from "./Testing/FetchingTestApi/FethcingTestApiHooks";
 
 function App(props) {
   return (
     <>
-      <TestCounter />
-      <CounterList />
+      {/* <TestCounter />
+      <CounterList /> */}
+      <FetchingTestApi id={1} />
+      {/* <FetchingTestApiHooks /> */}
       {/* <Main /> */}
       {/* <KeysAsIndex /> */}
       {/* <TodoList /> */}
