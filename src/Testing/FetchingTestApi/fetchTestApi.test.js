@@ -30,13 +30,13 @@ describe("User", () => {
   it("should render loading... text ", async () => {
     //getOnece will only make getRequest Once a test
     //after first test the rsult of fetchApi will be clear
-    makeUrlWithUser(dummyUser);
+    makeUrlWithUser(dummyUser); //fetchRequest
     const wrapper = shallow(<FetchingTestApi id={1} />);
     expect(wrapper.find("h1").text()).toEqual("Loading...");
   });
 
   it("should render data after fetch ", async () => {
-    makeUrlWithUser(dummyUser);
+    makeUrlWithUser(dummyUser); //fetchRequest
     const wrapper = shallow(<FetchingTestApi id={1} />);
     await nextTick(); //wait untill promise has been resolved in nextTick
     wrapper.update(); //will update our component after fetch is resolved

@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { fetchUser } from "./util";
 
 class FetchingTestApi extends Component {
   constructor(props) {
@@ -7,14 +8,11 @@ class FetchingTestApi extends Component {
   state = { user: null, error: null };
 
   getDataFromApi = (id) => {
-    fetch(`https://jsonplaceholder.typicode.com/users/${id}`)
-      .then((response) => response.json())
+    fetchUser(id)
       .then((data) => {
-        this.setState({ user: data });
+        this.setState({ ...this.state, user: data });
       })
-      .catch((error) => {
-        this.setState({ error: error });
-      });
+      .then((error) => this.setState({ ...this.state, error: error }));
   };
 
   componentDidMount() {
